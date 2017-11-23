@@ -1,7 +1,8 @@
 // @flow
 
 const types = {
-  KNIGHT: 'knight'
+  KNIGHT: 'knight',
+  CARD: 'card'
 };
 
 export default types;

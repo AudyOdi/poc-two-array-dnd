@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Board from './Board';
+import Container from './Container';
 
 class App extends Component {
   constructor() {
@@ -10,12 +10,7 @@ class App extends Component {
   }
   render() {
     let {knightPosition} = this.state;
-    return (
-      <Board
-        knightPosition={knightPosition}
-        moveKnight={(x, y) => this.setState({knightPosition: [x, y]})}
-      />
-    );
+    return <Container />;
   }
 }
 
