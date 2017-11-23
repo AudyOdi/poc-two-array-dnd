@@ -11,7 +11,8 @@ const style = {
   padding: '0.5rem 1rem',
   marginBottom: '.5rem',
   backgroundColor: 'white',
-  cursor: 'move'
+  cursor: 'move',
+  minHeight: 50
 };
 
 const cardSource = {

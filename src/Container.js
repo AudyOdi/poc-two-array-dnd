@@ -9,8 +9,8 @@ import DropContainer from './DropContainer';
 const style = {
   minWidth: 400,
   maxWidth: 400,
-  minHeight: 200,
-  maxHeight: 200,
+  minHeight: 300,
+  maxHeight: 300,
   overflowY: 'scroll',
   marginHorizontal: 10
 };
@@ -24,42 +24,39 @@ class Container extends Component {
       cardsBoxLeft: [
         {
           id: 1,
-          text: 'Write a cool JS library'
+          text: '1'
         },
         {
           id: 2,
-          text: 'Make it generic enough'
+          text: '2'
         },
         {
           id: 3,
-          text: 'Write README'
+          text: '3'
         },
         {
           id: 4,
-          text: 'Create some examples'
+          text: '4'
         },
         {
           id: 5,
-          text:
-            'Spam in Twitter and IRC to promote it (note that this element is taller than the others)'
+          text: '5'
         },
         {
           id: 6,
-          text: '???'
+          text: '6'
         },
         {
           id: 7,
-          text: 'PROFIT'
-        }
-      ],
-      cardsBoxRight: [
+          text: '7'
+        },
         {
           id: 8,
-          text: 'Baru'
+          text: '8'
         },
         {
           id: 9,
-          text: 'Lagi'
+          text: '9'
         },
         {
           id: 10,
@@ -76,6 +73,36 @@ class Container extends Component {
         {
           id: 13,
           text: '13'
+        }
+      ],
+      cardsBoxRight: [
+        {
+          id: 14,
+          text: '14'
+        },
+        {
+          id: 15,
+          text: '15'
+        },
+        {
+          id: 16,
+          text: '16'
+        },
+        {
+          id: 17,
+          text: '17'
+        },
+        {
+          id: 18,
+          text: '18'
+        },
+        {
+          id: 19,
+          text: '19'
+        },
+        {
+          id: 20,
+          text: '20'
         }
       ]
     };
