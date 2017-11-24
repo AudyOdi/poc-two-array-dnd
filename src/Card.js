@@ -74,6 +74,7 @@ const cardTarget = {
     // but it's good here for the sake of performance
     // to avoid expensive index searches.
     monitor.getItem().index = hoverIndex;
+    monitor.getItem().itemLane = hoverLane;
   },
   drop(props, monitor) {
     props.onDrop();
@@ -88,12 +89,19 @@ class Card extends Component {
     isDragging: PropTypes.bool.isRequired,
     id: PropTypes.any.isRequired,
     text: PropTypes.string.isRequired,
+    lane: PropTypes.string.isRequired,
     moveCard: PropTypes.func.isRequired,
     onDrop: PropTypes.func.isRequired
   };
 
   render() {
-    const {text, isDragging, connectDragSource, connectDropTarget} = this.props;
+    const {
+      lane,
+      text,
+      isDragging,
+      connectDragSource,
+      connectDropTarget
+    } = this.props;
     const opacity = isDragging ? 0 : 1;
 
     return connectDragSource(

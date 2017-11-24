@@ -147,7 +147,6 @@ class Container extends Component {
     this._prevHoverLane = hoverLane;
   }
   onDrop() {
-    console.log('dropped');
     this._prevHoverLane = null;
   }
 
